@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <script src="./style.css"></script>
+   <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script>
+   <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+   <script src="https://cdn.jsdelivr.net/npm/dayjs@1/locale/pt-br.js"></script>
+   <script>dayjs.locale('pt-br')</script>
+</head>
+
+<body>
+   <form onsubmit="adicionarParticipante(event)">
+      <fieldset>
+         <legend>Inscrição</legend>
+
+         <div>
+            <input type="text"
+            placeholder="Nome Completo"
+            name="nome"
+            required
+            >
+
+            <input type="email"
+            placeholder="Email"
+            name="email"
+            required
+            >
+
+            <button>
+               REALIZAR INSCRIÇÃO
+            </button>
+         </div>
+      </fieldset>
+   </form>
+
+   <table width="100%">
+      <thead style="text-align: left">
+         <tr>
+            <th>Participante</th>
+            <th>Data da inscrição</th>
+            <th>Data do check-in</th>
+         </tr>
+      </thead>
+
+      <tbody>
+      
+      </tbody>
+   </table>
+   <script src="./script.js"></script>
+</body>
+</html>
